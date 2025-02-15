@@ -112,7 +112,7 @@ function App() {
             label: { color: "white" },
             ".css-voecp4-MuiInputBase-input-MuiFilledInput-input": { color: "white", paddingRight: '100px' },
             ".css-1pht7va-MuiInputBase-root-MuiFilledInput-root": {background: 'rgba(0, 0, 0, .35)'},
-            ".css-1xqpa0d":{color:'white'},
+            // ".css-1xqpa0d":{color:'white'},
             width: '700px',
             height: '100%',
           }}
