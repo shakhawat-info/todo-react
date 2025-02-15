@@ -89,7 +89,7 @@ function App() {
 
   return (
 
-    <div className="parent">
+  <div className="parent">
     <div className="main">
 
       {/* delete modal */}
@@ -114,6 +114,7 @@ function App() {
             // ".css-1xqpa0d":{color:'white'},
             width: '100%',
             height: '100%',
+            color: 'white'
           }}
           onChange={handleInputCNG}
           value={task}
@@ -134,7 +135,7 @@ function App() {
       ))}
       </ul>
     </div>
-    </div>
+  </div>
   );
 }
 
