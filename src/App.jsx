@@ -1,7 +1,4 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
 
 
 // components
@@ -91,6 +88,8 @@ function App() {
   }
 
   return (
+
+    <div className="parent">
     <div className="main">
 
       {/* delete modal */}
@@ -113,7 +112,7 @@ function App() {
             ".css-voecp4-MuiInputBase-input-MuiFilledInput-input": { color: "white", paddingRight: '100px' },
             ".css-1pht7va-MuiInputBase-root-MuiFilledInput-root": {background: 'rgba(0, 0, 0, .35)'},
             // ".css-1xqpa0d":{color:'white'},
-            width: '700px',
+            width: '100%',
             height: '100%',
           }}
           onChange={handleInputCNG}
@@ -134,6 +133,7 @@ function App() {
         <li key={indx}>{indx}. <div className="txtitem">{item} </div> <div className="iconbx"><IconButton onClick={()=>handleSetEdit(indx)} aria-label="edit"> <EditNoteIcon  sx={{color: 'white' , fontSize: '33px'}}/> </IconButton> <IconButton onClick={()=>handleAsk(indx)} aria-label="delete"> <DeleteIcon  sx={{color: 'white'}}/> </IconButton></div></li>
       ))}
       </ul>
+    </div>
     </div>
   );
 }
